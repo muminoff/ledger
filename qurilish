@@ -1,0 +1,143 @@
+; -*- ledger -*-
+; -*- coding: utf-8 -*-
+; This is personal accounting journal
+
+; Commodities
+commodity 
+  note KRW
+  format ₩ 1,000
+  default
+
+; Accounts
+account Expenses
+account Expenses:Food
+account Expenses:Transport:Taxi
+account Expenses:Transport:Bus
+account Expenses:Personal:Coffee
+account Expenses:Personal:Breakfast
+account Expenses:Personal:Lunch
+account Expenses:Personal:Belongings
+account Expenses:Kindergarten
+account Expenses:Family
+account Expenses:Family:Groceries
+account Expenses:Family:Dinner
+account Expenses:Family:Necessity
+account Expenses:Family:Wife
+account Expenses:Family:Kids
+account Expenses:Uzbekistan
+account Expenses:Bills:Electricity
+account Expenses:Bills:Gas
+account Expenses:Bills:Mobile
+account Expenses:Rent
+account Expenses:Rent:Utils
+account Expenses:ATM:Comission
+
+account Assets
+account Assets:Savings
+account Assets:Savings:Cash
+account Assets:Savings:Kookmin
+account Assets:Savings:KEB
+account Assets:Savings:Woori
+account Assets:Savings:IBK
+account Assets:Savings:Shinhan
+
+account Income
+account Income:Salary
+account Income:Moonlight
+
+account Liabilities
+account Liabilities:Credit
+account Liabilities:Debt
+
+account Equity
+account Balance
+account Lending
+account Borrow
+
+
+alias credit=Liabilities:Credit
+alias debt=Liabilities:Debt
+alias taxi=Expenses:Transport:Taxi
+alias coffee=Expenses:Personal:Coffee
+alias breakfast=Expenses:Personal:Breakfast
+alias lunch=Expenses:Personal:Lunch
+alias kindergarten=Expenses:Kindergarten
+alias kids=Expenses:Family:Kids
+alias wife=Expenses:Family:Wife
+alias dinner=Expenses:Family:Dinner
+alias groceries=Expenses:Family:Groceries
+alias family=Expenses:Family:Necessity
+alias kt=Expenses:Subscription:KT
+alias electricity=Expenses:Bills:Electricity
+alias gas=Expenses:Bills:Gas
+alias mobile=Expenses:Bills:Mobile
+alias rent=Expenses:Rent
+alias utils=Expenses:Rent:Utils
+alias salary=Assets:Income:Salary
+alias moonlight=Assets:Income:Moonlight
+alias savings=Assets:Savings
+alias kookmin=Assets:Savings:Kookmin
+alias woori=Assets:Savings:Woori
+alias shinhan=Assets:Savings:Shinhan
+alias ibk=Assets:Savings:IBK
+alias personal=Expenses:Personal:Belongings
+alias gifts=Expenses:Uzbekistan
+alias equity=Equity
+alias balance=Balance
+alias lending=Lending
+alias borrow=Borrow
+alias atm=Expenses:ATM:Comission
+
+
+07.05 initial
+  salary          ₩ 3259403
+  kookmin         ₩ 21754
+  credit          ₩ -2370358
+  ibk             ₩ 1011
+  balance
+
+07.05 company
+  woori           ₩ 3259403
+  salary
+
+07.05 credit
+  lunch           ₩ 4700
+  personal        ₩ 1200
+  credit
+
+07.05 woori
+  ibk             ₩ 662000
+  atm             ₩ 1000
+  woori
+
+07.05 ibk
+  electricity     ₩ 47120
+  gas             ₩ 30270
+  ibk
+ 
+07.05 woori
+  ibk             ₩ 465000
+  atm             ₩ 1000
+  woori
+
+07.05 ibk
+  kindergarten    ₩ 465000
+  ibk
+
+07.05 credit
+  groceries       ₩ 5050
+  coffee          ₩ 1500
+  credit
+
+07.05 kookmin
+  family          ₩ 4000
+  kookmin
+
+07.06 credit
+  taxi            ₩ 4340
+  lunch           ₩ 8000
+  credit
+
+; 07.06 ibk
+;   credit          ₩ 1960274
+;   woori
