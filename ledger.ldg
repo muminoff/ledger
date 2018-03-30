@@ -1,0 +1,31 @@
+; -*- ledger -*-
+; -*- coding: utf-8 -*-
+; This is personal accounting journal
+; Owner: Sardor Muminov
+; Email: smuminov@gmail.com
+; PGP Fingerprint: FF87153B1371D515
+
+; commodities
+commodity ₩
+  note KRW
+  format ₩ 1,000
+  default
+
+; accounts
+account expense:uzb
+account expense:utils
+account saving
+account income:salary
+account income:moonlight
+account woori
+account ibk
+account shinhan
+account lotte
+account lending
+
+
+07.05 initial
+  woori           ₩ 1,110,681
+  ; ibk             ₩ 361,232
+  ; lending         ₩ -1,385,000
+  balance
